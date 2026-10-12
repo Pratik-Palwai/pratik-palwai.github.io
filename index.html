@@ -1,0 +1,976 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pratik Palwai | Mechanical & Embedded Systems Engineer</title>
+  <meta name="description" content="Engineering portfolio of Pratik Palwai — Mechanical Engineering & Computer Science at UC Irvine. Automotive controls, UAV aerodynamics, embedded systems, and precision fabrication.">
+  <meta name="keywords" content="Pratik Palwai, Engineering Portfolio, Mechanical Engineering, UC Irvine, Embedded Systems, Hyundai Motor Group, UAV Forge, Formula SAE, SolidWorks CSWP, Robotics">
+  <meta name="author" content="Pratik Palwai">
+  
+  <!-- OpenGraph / Social Metadata -->
+  <meta property="og:title" content="Pratik Palwai | Engineering Portfolio">
+  <meta property="og:description" content="Mechanical & Embedded Systems Engineer — UC Irvine. Automotive controls, hybrid VTOL UAVs, CANbus telemetry, and precision machining.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://pratik-palwai.github.io/">
+
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+
+  <!-- Google Fonts: Inter & JetBrains Mono -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- ======================================================================
+       NAVBAR
+       ====================================================================== -->
+  <header class="navbar">
+    <div class="container nav-wrapper">
+      <a href="#about" class="brand" aria-label="Pratik Palwai Portfolio Home">
+        <div class="brand-icon">P</div>
+        <div class="brand-text">
+          <span class="brand-name">Pratik Palwai</span>
+          <span class="brand-tag">ME + CS · UC Irvine</span>
+        </div>
+      </a>
+
+      <nav>
+        <ul class="nav-links" id="nav-links">
+          <li><a href="#about" class="nav-link active">About</a></li>
+          <li><a href="#projects" class="nav-link">Projects</a></li>
+          <li><a href="#experience" class="nav-link">Experience</a></li>
+          <li><a href="#skills" class="nav-link">Skills</a></li>
+          <li><a href="#education" class="nav-link">Education</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <!-- Theme Toggle Button -->
+        <button id="theme-toggle" class="btn-icon" aria-label="Toggle theme" title="Toggle dark/light theme">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+          </svg>
+        </button>
+
+        <!-- Direct Resume Download Button -->
+        <a href="assets/resume.pdf" target="_blank" class="btn btn-primary btn-sm" download="Pratik_Palwai_Resume.pdf">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+          <span>Resume (PDF)</span>
+        </a>
+
+        <!-- Mobile Menu Hamburger -->
+        <button class="btn-icon mobile-nav-toggle" id="mobile-nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- ======================================================================
+         HERO / ABOUT SECTION
+         ====================================================================== -->
+    <section class="hero-section" id="about">
+      <div class="hero-glow"></div>
+      <div class="container">
+        
+        <div class="hero-top-badges">
+          <div class="badge badge-emerald">
+            <span class="status-dot"></span>
+            <span>Available for Internships & Co-Ops</span>
+          </div>
+          <div class="badge badge-cyan">
+            <span>UC Irvine '28 · B.S. Mechanical Eng · CS Minor</span>
+          </div>
+          <div class="badge badge-amber">
+            <span>CSWP Certified (SolidWorks)</span>
+          </div>
+        </div>
+
+        <h1 class="hero-title">
+          Engineering Hardware, <br>
+          <span class="text-gradient">Embedded Systems</span> & Dynamics.
+        </h1>
+
+        <p class="hero-subtitle">
+          Pratik Palwai · Irvine, California
+        </p>
+
+        <p class="hero-bio">
+          I am a Mechanical Engineering undergraduate with a Computer Science minor at UC Irvine. I specialize in the intersection of electro-mechanical hardware, vehicle dynamics, and embedded systems — from developing terrain traction control algorithms at Hyundai Motor Group to optimizing hybrid VTOL aircraft aerodynamics and engineering Formula SAE electric powertrains.
+        </p>
+
+        <div class="hero-cta-group">
+          <a href="#projects" class="btn btn-primary">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+            <span>Explore Projects</span>
+          </a>
+
+          <a href="assets/resume.pdf" target="_blank" class="btn btn-secondary" download="Pratik_Palwai_Resume.pdf">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>
+            <span>Download Resume</span>
+          </a>
+
+          <div class="hero-social-links">
+            <a href="https://github.com/Pratik-Palwai" target="_blank" rel="noopener noreferrer" class="social-link" title="GitHub Profile">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+            </a>
+            <a href="https://www.linkedin.com/in/pratik-palwai/" target="_blank" rel="noopener noreferrer" class="social-link" title="LinkedIn Profile">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+            </a>
+            <a href="https://grabcad.com/pratik.palwai-1/models" target="_blank" rel="noopener noreferrer" class="social-link" title="GrabCAD 3D Models">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path><polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline><line x1="12" y1="22.08" x2="12" y2="12"></line></svg>
+            </a>
+            <a href="mailto:pratik.palwai.1@gmail.com" class="social-link" title="Send Email">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Quantitative Metric Highlights -->
+        <div class="metrics-grid">
+          <div class="metric-card">
+            <div class="metric-val">50 km</div>
+            <div class="metric-lbl">UAV Mission Flight Range</div>
+            <div class="metric-sub">+354% extended range via 4+1 VTOL sizing</div>
+          </div>
+          <div class="metric-card">
+            <div class="metric-val">&lt; 2.50 s</div>
+            <div class="metric-lbl">FSAE EV 0-60 mph Sim</div>
+            <div class="metric-sub">Pacejka tire slip & gear ratio optimization</div>
+          </div>
+          <div class="metric-card">
+            <div class="metric-val">40+</div>
+            <div class="metric-lbl">Calibrated Strain Gauges</div>
+            <div class="metric-sub">Driveshaft load calibration at Hyundai</div>
+          </div>
+          <div class="metric-card">
+            <div class="metric-val">4-Axis</div>
+            <div class="metric-lbl">Custom CNC Hot-Wire Router</div>
+            <div class="metric-sub">Built with RP2040 & custom grblHAL firmware</div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         PROJECTS SECTION
+         ====================================================================== -->
+    <section class="section" id="projects">
+      <div class="container">
+        
+        <div class="section-header">
+          <span class="section-tag">// Engineering Portfolio</span>
+          <h2 class="section-title">Featured Technical Projects</h2>
+          <p class="section-description">
+            Selected engineering work spanning automotive controls, aircraft aerodynamics, embedded telemetry, and precision machine fabrication. Click any project for technical equations, architecture, and validation.
+          </p>
+        </div>
+
+        <!-- Filter Buttons -->
+        <div class="filter-bar">
+          <button class="filter-btn active" data-filter="all">All Projects (7)</button>
+          <button class="filter-btn" data-filter="automotive">Automotive & Controls</button>
+          <button class="filter-btn" data-filter="aerospace">Aerospace & UAVs</button>
+          <button class="filter-btn" data-filter="embedded">Embedded & Mechatronics</button>
+          <button class="filter-btn" data-filter="fabrication">Fabrication & CAD</button>
+        </div>
+
+        <!-- Projects Grid -->
+        <div class="projects-grid">
+
+          <!-- PROJECT 1: HYUNDAI TRACTION CONTROL -->
+          <article class="project-card" data-category="automotive embedded">
+            <div class="project-img-wrapper">
+              <img src="assets/images/fsae_ev_sim.png" alt="Hyundai Traction Control and CANbus Data" class="project-img" loading="lazy">
+              <span class="badge badge-cyan project-category-badge">Automotive</span>
+              <span class="badge badge-amber project-role-badge">Hyundai Intern</span>
+            </div>
+            <div class="project-body">
+              <span class="project-affiliation">Hyundai Motor Group</span>
+              <h3 class="project-title">Sand Traction Control & Powertrain Telemetry</h3>
+              <p class="project-desc">
+                Developed and calibrated sand terrain control software for the 2028 Hyundai Santa Fe XRT, modulating electro-hydraulic brake line pressure and torque to sustain vehicle momentum in low-friction terrain.
+              </p>
+              <div class="project-stats-pill">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 12h-4l-3 9L9 3l-3 9H2"></path></svg>
+                <span>40+ Strain Gauges Calibrated on 2025 Ford Bronco</span>
+              </div>
+              <div class="project-tags">
+                <span class="tech-tag">CANbus</span>
+                <span class="tech-tag">Python DAQ</span>
+                <span class="tech-tag">Vehicle Dynamics</span>
+                <span class="tech-tag">Strain Gauges</span>
+                <span class="tech-tag">Butterworth Filter</span>
+              </div>
+              <div class="project-footer">
+                <button class="btn-card-details" data-project-trigger="hyundai">
+                  <span>View Technical Deep-Dive</span>
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"></polyline></svg>
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- PROJECT 2: UAV FORGE HYBRID VTOL -->
+          <article class="project-card" data-category="aerospace fabrication">
+            <div class="project-img-wrapper">
+              <img src="assets/images/uav_flight_range.png" alt="UAV Sizing Trade Study and Range Analysis" class="project-img" loading="lazy">
+              <span class="badge badge-cyan project-category-badge">Aerospace</span>
+              <span class="badge badge-amber project-role-badge">Aircraft Lead</span>
+            </div>
+            <div class="project-body">
+              <span class="project-affiliation">UCI UAV Forge SUAS</span>
+              <h3 class="project-title">Autonomous Hybrid VTOL UAV (4+1 Quad-Plane)</h3>
+              <p class="project-desc">
+                Architected the aerodynamic sizing and configuration for UCI's first hybrid VTOL UAV. Conducted first-principles sizing scripts in Python and Flow5 to balance wing loading, battery fraction, and cruise efficiency.
+              </p>
+              <div class="project-stats-pill">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"></polyline><polyline points="17 6 23 6 23 12"></polyline></svg>
+                <span>Range Extended: 11 km → 50 km (+354%)</span>
+              </div>
+              <div class="project-tags">
+                <span class="tech-tag">Python Sizing</span>
+                <span class="tech-tag">Flow5 / xFoil</span>
+                <span class="tech-tag">SolidWorks CAD</span>
+                <span class="tech-tag">Aerodynamics</span>
+                <span class="tech-tag">Composites</span>
+              </div>
+              <div class="project-footer">
+                <button class="btn-card-details" data-project-trigger="uav_forge">
+                  <span>View Technical Deep-Dive</span>
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"></polyline></svg>
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- PROJECT 3: FORMULA SAE EV POWERTRAIN -->
+          <article class="project-card" data-category="automotive fabrication">
+            <div class="project-img-wrapper">
+              <img src="assets/images/fsae_ev_powertrain.png" alt="FSAE EV Powertrain and Acceleration Simulation" class="project-img" loading="lazy">
+              <span class="badge badge-cyan project-category-badge">Automotive</span>
+              <span class="badge badge-amber project-role-badge">Powertrain Lead</span>
+            </div>
+            <div class="project-body">
+              <span class="project-affiliation">UCI Formula SAE EV Racing</span>
+              <h3 class="project-title">EV Powertrain Gearbox & Closed-Loop Thermal Control</h3>
+              <p class="project-desc">
+                Simulated vehicle launch dynamics to optimize reduction gear ratios, machined powertrain housings per ASME Y14.5 GD&T standards, and implemented closed-loop PID thermal control for motor and dual inverters.
+              </p>
+              <div class="project-stats-pill">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+                <span>0-60 mph Launch &lt; 2.50s | ASME Y14.5 GD&T</span>
+              </div>
+              <div class="project-tags">
+                <span class="tech-tag">SolidWorks CSWP</span>
+                <span class="tech-tag">GD&T (ASME Y14.5)</span>
+                <span class="tech-tag">Python Sim</span>
+                <span class="tech-tag">PID Thermal Loop</span>
+                <span class="tech-tag">CNC Machining</span>
+              </div>
+              <div class="project-footer">
+                <button class="btn-card-details" data-project-trigger="fsae_ev">
+                  <span>View Technical Deep-Dive</span>
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"></polyline></svg>
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- PROJECT 4: 4-AXIS CNC FOAM ROUTER -->
+          <article class="project-card" data-category="fabrication embedded aerospace">
+            <div class="project-img-wrapper">
+              <img src="assets/images/uav_drag_polar.png" alt="Aerodynamic Polar Analysis for Wing Core Cutter" class="project-img" loading="lazy">
+              <span class="badge badge-cyan project-category-badge">Fabrication</span>
+              <span class="badge badge-amber project-role-badge">Chief Engineer</span>
+            </div>
+            <div class="project-body">
+              <span class="project-affiliation">UCI AIAA Design/Build/Fly</span>
+              <h3 class="project-title">Custom 36" 4-Axis CNC Hot-Wire Foam Router</h3>
+              <p class="project-desc">
+                Engineered a 4-axis hot-wire CNC machine running a custom-forked grblHAL firmware on an RP2040 microcontroller. Enabled precision tapered foam core cutting, reducing structural wing mass by 40%.
+              </p>
+              <div class="project-stats-pill">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="4 14 10 14 10 20"></polyline><polyline points="20 10 14 10 14 4"></polyline><line x1="14" y1="10" x2="21" y2="3"></line><line x1="3" y1="21" x2="10" y2="14"></line></svg>
+                <span>-40% Wing Mass | Synchronized 4-Axis Kinematics</span>
+              </div>
+              <div class="project-tags">
+                <span class="tech-tag">RP2040 MCU</span>
+                <span class="tech-tag">grblHAL C++</span>
+                <span class="tech-tag">Stepper Kinematics</span>
+                <span class="tech-tag">Composites Layup</span>
+                <span class="tech-tag">Vacuum Bagging</span>
+              </div>
+              <div class="project-footer">
+                <button class="btn-card-details" data-project-trigger="cnc_router">
+                  <span>View Technical Deep-Dive</span>
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"></polyline></svg>
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- PROJECT 5: AUTONOMOUS DRONE VISION -->
+          <article class="project-card" data-category="embedded aerospace">
+            <div class="project-img-wrapper">
+              <div class="project-img-fallback">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75">
+                  <path d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2zm1 14.93V18a1 1 0 0 1-2 0v-1.07A7 7 0 0 1 5.07 11H4a1 1 0 0 1 0-2h1.07A7 7 0 0 1 11 5.07V4a1 1 0 0 1 2 0v1.07A7 7 0 0 1 18.93 11H20a1 1 0 0 1 0 2h-1.07A7 7 0 0 1 13 16.93zM12 8a4 4 0 1 0 4 4 4 4 0 0 0-4-4z"/>
+                </svg>
+                <span style="font-family: var(--font-mono); font-size: 0.8rem;">OpenCV + Companion SBC Vision</span>
+              </div>
+              <span class="badge badge-cyan project-category-badge">Embedded</span>
+              <span class="badge badge-amber project-role-badge">Teaching Assistant</span>
+            </div>
+            <div class="project-body">
+              <span class="project-affiliation">UCI EECS Department</span>
+              <h3 class="project-title">Autonomous Drone AI Vision Tracking & Telemetry</h3>
+              <p class="project-desc">
+                Integrated Raspberry Pi companion SBC with OpenCV for onboard real-time visual target acquisition and tracking. Guided cohorts in diagnosing UART/I2C/SPI buses and DShot telemetry protocols with oscilloscopes.
+              </p>
+              <div class="project-stats-pill">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"></circle><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"></path></svg>
+                <span>Raspberry Pi · OpenCV · UART / I2C Debugging</span>
+              </div>
+              <div class="project-tags">
+                <span class="tech-tag">Raspberry Pi</span>
+                <span class="tech-tag">OpenCV</span>
+                <span class="tech-tag">Python</span>
+                <span class="tech-tag">UART / I2C</span>
+                <span class="tech-tag">Oscilloscopes</span>
+              </div>
+              <div class="project-footer">
+                <button class="btn-card-details" data-project-trigger="drone_cv">
+                  <span>View Technical Deep-Dive</span>
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"></polyline></svg>
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- PROJECT 6: DYNAMIC THRUST STAND -->
+          <article class="project-card" data-category="embedded">
+            <div class="project-img-wrapper">
+              <img src="assets/images/kalman_filter_thrust.png" alt="Dynamic Thrust Stand Kalman Filtered Telemetry" class="project-img" loading="lazy">
+              <span class="badge badge-cyan project-category-badge">Embedded</span>
+              <span class="badge badge-amber project-role-badge">Research / Lab</span>
+            </div>
+            <div class="project-body">
+              <span class="project-affiliation">Propulsion & Mechatronics Lab</span>
+              <h3 class="project-title">Dynamic Thrust Stand & Kalman Filter DAQ</h3>
+              <p class="project-desc">
+                Constructed a high-speed propulsion test rig featuring an ESP32-C3 microcontroller running a discrete 1D Kalman filter to reject brushless motor harmonic vibrations from load cell strain gauge readings.
+              </p>
+              <div class="project-stats-pill">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon></svg>
+                <span>100 Hz Real-Time Kalman Filtering on ESP32-C3</span>
+              </div>
+              <div class="project-tags">
+                <span class="tech-tag">ESP32-C3</span>
+                <span class="tech-tag">PlatformIO C++</span>
+                <span class="tech-tag">Kalman Filtering</span>
+                <span class="tech-tag">Load Cells</span>
+                <span class="tech-tag">DAQ Telemetry</span>
+              </div>
+              <div class="project-footer">
+                <button class="btn-card-details" data-project-trigger="thrust_stand">
+                  <span>View Technical Deep-Dive</span>
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"></polyline></svg>
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- PROJECT 7: MACHINE SHOP & PRECISION FABRICATION -->
+          <article class="project-card" data-category="fabrication">
+            <div class="project-img-wrapper">
+              <img src="assets/images/powertrain_cooling_circuit.png" alt="Precision Assembly and Machining Documentation" class="project-img" loading="lazy">
+              <span class="badge badge-cyan project-category-badge">Fabrication</span>
+              <span class="badge badge-amber project-role-badge">Shop Staff</span>
+            </div>
+            <div class="project-body">
+              <span class="project-affiliation">UCI Samueli School of Engineering</span>
+              <h3 class="project-title">Robotics Fabrication & Precision Metrology</h3>
+              <p class="project-desc">
+                Instructed 200+ students on 3D CAD modeling, CNC mill toolpaths, and manual lathe operation for pneumatically propelled robots. Enforced metrology standards using micrometers and dial indicators.
+              </p>
+              <div class="project-stats-pill">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"></path></svg>
+                <span>200+ Students Mentored · CNC & Manual Metrology</span>
+              </div>
+              <div class="project-tags">
+                <span class="tech-tag">CNC Milling</span>
+                <span class="tech-tag">Manual Lathe</span>
+                <span class="tech-tag">SolidWorks CSWP</span>
+                <span class="tech-tag">Precision Metrology</span>
+                <span class="tech-tag">Pneumatics</span>
+              </div>
+              <div class="project-footer">
+                <button class="btn-card-details" data-project-trigger="machine_shop">
+                  <span>View Technical Deep-Dive</span>
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"></polyline></svg>
+                </button>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         EXPERIENCE TIMELINE
+         ====================================================================== -->
+    <section class="section" id="experience" style="background-color: var(--bg-surface);">
+      <div class="container">
+        
+        <div class="section-header">
+          <span class="section-tag">// Professional Track</span>
+          <h2 class="section-title">Experience & Leadership</h2>
+          <p class="section-description">
+            Industry internship experience combined with competitive collegiate team technical leadership and machining instruction.
+          </p>
+        </div>
+
+        <div class="timeline">
+
+          <!-- HYUNDAI MOTOR GROUP -->
+          <div class="timeline-item">
+            <div class="timeline-marker"></div>
+            <div class="timeline-card">
+              <div class="timeline-header">
+                <span class="timeline-role">Off-Road Engineering Intern</span>
+                <span class="timeline-period">June 2026 – Present</span>
+              </div>
+              <div class="timeline-company">Hyundai Motor Group</div>
+              <ul class="timeline-bullets">
+                <li>Developed and calibrated traction control software for the 2028 Hyundai Santa Fe XRT terrain modes, modulating brake line pressure and powertrain torque to sustain vehicle momentum and stability in soft sand.</li>
+                <li>Instrumented a 2025 Ford Bronco Badlands benchmarking vehicle with 40+ strain gauges, formulating calibration procedures for dynamic driveshaft torque measurements and collecting empirical baseline load targets.</li>
+                <li>Architected an automated Python library for CANbus data acquisition, digital sensor signal filtering, and rapid test report generation.</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- UCI UAV FORGE -->
+          <div class="timeline-item">
+            <div class="timeline-marker"></div>
+            <div class="timeline-card">
+              <div class="timeline-header">
+                <span class="timeline-role">Aircraft Lead</span>
+                <span class="timeline-period">April 2026 – Present</span>
+              </div>
+              <div class="timeline-company">UCI UAV Forge SUAS</div>
+              <ul class="timeline-bullets">
+                <li>Directed all aircraft technical architecture for the international SUAS challenge, executing sizing optimization, rapid subsystem prototyping, and multi-regime flight test verification.</li>
+                <li>Led 3D CAD modeling of complex aerodynamic geometries and structural analysis for UCI's first autonomous hybrid VTOL (4+1 quad plane) UAV, extending operational flight range from 11 km to 50 km.</li>
+                <li>Applied engineering first principles in Python, Flow5, and MIT xFoil to size wing and empennage geometries, optimizing cruise and stall margins under strict payload and structural constraints.</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- UCI SAMUELI MACHINE SHOP -->
+          <div class="timeline-item">
+            <div class="timeline-marker"></div>
+            <div class="timeline-card">
+              <div class="timeline-header">
+                <span class="timeline-role">Machine Shop Staff & Technical Mentor</span>
+                <span class="timeline-period">Jan 2025 – Present</span>
+              </div>
+              <div class="timeline-company">UCI Samueli School of Engineering</div>
+              <ul class="timeline-bullets">
+                <li>Mentored 200+ undergraduate engineering students in mechanical hardware design, 3D CAD modeling, and fabrication of pneumatically propelled competition robots.</li>
+                <li>Trained students on 3-axis CNC mills, manual lathes, knee mills, and 3D printers, enforcing GD&T verification using vernier calipers, micrometers, and dial indicators.</li>
+                <li>Conducted preventative maintenance, failure analysis, and repairs across industrial shop machinery to guarantee workplace safety and equipment availability.</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- UCI EECS TA -->
+          <div class="timeline-item">
+            <div class="timeline-marker"></div>
+            <div class="timeline-card">
+              <div class="timeline-header">
+                <span class="timeline-role">Teaching Assistant — Autonomous Drones</span>
+                <span class="timeline-period">Sept 2025 – Present</span>
+              </div>
+              <div class="timeline-company">UCI EECS Department</div>
+              <ul class="timeline-bullets">
+                <li>Instructed students in electromechanical hardware assembly, firmware configuration, and flight test tuning for autonomous quadcopters.</li>
+                <li>Evaluated onboard AI computer vision integration with OpenCV on Raspberry Pi companion computers for real-time target recognition and visual tracking.</li>
+                <li>Diagnosed hardware, firmware, and embedded peripheral communication protocols over UART, I2C, SPI, and DShot using digital storage oscilloscopes.</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- UCI AIAA DBF -->
+          <div class="timeline-item">
+            <div class="timeline-marker"></div>
+            <div class="timeline-card">
+              <div class="timeline-header">
+                <span class="timeline-role">Chief Engineer</span>
+                <span class="timeline-period">Sept 2024 – April 2026</span>
+              </div>
+              <div class="timeline-company">UCI AIAA Design/Build/Fly</div>
+              <ul class="timeline-bullets">
+                <li>Spearheaded all technical vehicle development for the AIAA DBF international flyoff, directing aerodynamic sizing, composite layups, and flight envelope expansion.</li>
+                <li>Engineered and built a custom 36" 4-axis hot-wire CNC router powered by an RP2040 microcontroller with custom-forked grblHAL firmware to precision-cut foam cores, cutting composite wing structural mass by 40%.</li>
+                <li>Conducted vacuum-bagged carbon fiber and fiberglass wet layups, achieving structural compliance under 6G load factor tests.</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- UCI FORMULA SAE EV -->
+          <div class="timeline-item">
+            <div class="timeline-marker"></div>
+            <div class="timeline-card">
+              <div class="timeline-header">
+                <span class="timeline-role">Powertrain Lead</span>
+                <span class="timeline-period">Sept 2024 – April 2026</span>
+              </div>
+              <div class="timeline-company">UCI Formula SAE EV Racing</div>
+              <ul class="timeline-bullets">
+                <li>Authored 2D manufacturing prints using GD&T per ASME Y14.5, machined powertrain components, and engineered a go/no-go inspection fixture to verify machined parts for bearing fit and tolerances.</li>
+                <li>Simulated vehicle acceleration dynamics in Python to optimize gearbox reduction ratios, unlocking sub-2.50s 0–60 mph launches.</li>
+                <li>Implemented closed-loop PID control loops for coolant pumps and radiator fans to regulate motor and dual-inverter silicon temperatures under endurance race conditions.</li>
+              </ul>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         SKILLS MATRIX
+         ====================================================================== -->
+    <section class="section" id="skills">
+      <div class="container">
+        
+        <div class="section-header">
+          <span class="section-tag">// Technical Toolkit</span>
+          <h2 class="section-title">Technical Competencies</h2>
+          <p class="section-description">
+            Hands-on expertise cultivated through production automotive internships, aerospace airframe engineering, and precision machine fabrication.
+          </p>
+        </div>
+
+        <div class="skills-grid">
+
+          <!-- CAD & CAE -->
+          <div class="skill-category-card">
+            <div class="skill-header">
+              <div class="skill-icon-box">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path><polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline><line x1="12" y1="22.08" x2="12" y2="12"></line></svg>
+              </div>
+              <div>
+                <h3 class="skill-cat-title">CAD, CAE & Simulation</h3>
+                <span class="skill-cat-subtitle">Design & Analysis</span>
+              </div>
+            </div>
+            <div class="skill-list">
+              <div class="skill-item">
+                <div class="skill-item-info">
+                  <span class="skill-name">SolidWorks (CSWP Certified)</span>
+                  <span class="skill-detail">Advanced 3D Solids / Surfacing</span>
+                </div>
+                <div class="skill-bar-bg"><div class="skill-bar-fill" style="width: 95%;"></div></div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-item-info">
+                  <span class="skill-name">GD&T (ASME Y14.5)</span>
+                  <span class="skill-detail">2D Prints & Datum Schemes</span>
+                </div>
+                <div class="skill-bar-bg"><div class="skill-bar-fill" style="width: 90%;"></div></div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-item-info">
+                  <span class="skill-name">XFLR5 / Flow5 / xFoil</span>
+                  <span class="skill-detail">Aerodynamic Polars & Panel Code</span>
+                </div>
+                <div class="skill-bar-bg"><div class="skill-bar-fill" style="width: 88%;"></div></div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-item-info">
+                  <span class="skill-name">FEA & CFD Analysis</span>
+                  <span class="skill-detail">Structural Stress & Airflow</span>
+                </div>
+                <div class="skill-bar-bg"><div class="skill-bar-fill" style="width: 82%;"></div></div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-item-info">
+                  <span class="skill-name">MATLAB / Simulink</span>
+                  <span class="skill-detail">Dynamic Modeling & Controls</span>
+                </div>
+                <div class="skill-bar-bg"><div class="skill-bar-fill" style="width: 85%;"></div></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- EMBEDDED & HARDWARE -->
+          <div class="skill-category-card">
+            <div class="skill-header">
+              <div class="skill-icon-box">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="4" y="4" width="16" height="16" rx="2" ry="2"></rect><rect x="9" y="9" width="6" height="6"></rect><line x1="9" y1="1" x2="9" y2="4"></line><line x1="15" y1="1" x2="15" y2="4"></line><line x1="9" y1="20" x2="9" y2="23"></line><line x1="15" y1="20" x2="15" y2="23"></line><line x1="20" y1="9" x2="23" y2="9"></line><line x1="20" y1="14" x2="23" y2="14"></line><line x1="1" y1="9" x2="4" y2="9"></line><line x1="1" y1="14" x2="4" y2="14"></line></svg>
+              </div>
+              <div>
+                <h3 class="skill-cat-title">Embedded Systems</h3>
+                <span class="skill-cat-subtitle">Hardware & Microcontrollers</span>
+              </div>
+            </div>
+            <div class="skill-list">
+              <div class="skill-item">
+                <div class="skill-item-info">
+                  <span class="skill-name">CANbus & Automotive Protocols</span>
+                  <span class="skill-detail">J1939, UDS, CAN-FD</span>
+                </div>
+                <div class="skill-bar-bg"><div class="skill-bar-fill" style="width: 92%;"></div></div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-item-info">
+                  <span class="skill-name">Microcontrollers</span>
+                  <span class="skill-detail">RP2040, ESP32, STM32, Arduino</span>
+                </div>
+                <div class="skill-bar-bg"><div class="skill-bar-fill" style="width: 94%;"></div></div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-item-info">
+                  <span class="skill-name">Communication Protocols</span>
+                  <span class="skill-detail">UART, I2C, SPI, DShot</span>
+                </div>
+                <div class="skill-bar-bg"><div class="skill-bar-fill" style="width: 90%;"></div></div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-item-info">
+                  <span class="skill-name">Closed-Loop PID Control</span>
+                  <span class="skill-detail">Thermal Loops & Motor Speed</span>
+                </div>
+                <div class="skill-bar-bg"><div class="skill-bar-fill" style="width: 88%;"></div></div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-item-info">
+                  <span class="skill-name">Lab Instrumentation</span>
+                  <span class="skill-detail">Oscilloscopes, DAQ, Strain Gauges</span>
+                </div>
+                <div class="skill-bar-bg"><div class="skill-bar-fill" style="width: 90%;"></div></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- SOFTWARE & SIMULATION -->
+          <div class="skill-category-card">
+            <div class="skill-header">
+              <div class="skill-icon-box">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg>
+              </div>
+              <div>
+                <h3 class="skill-cat-title">Software & Simulation</h3>
+                <span class="skill-cat-subtitle">Languages & Frameworks</span>
+              </div>
+            </div>
+            <div class="skill-list">
+              <div class="skill-item">
+                <div class="skill-item-info">
+                  <span class="skill-name">Python</span>
+                  <span class="skill-detail">NumPy, SciPy, Matplotlib, PyCAN</span>
+                </div>
+                <div class="skill-bar-bg"><div class="skill-bar-fill" style="width: 94%;"></div></div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-item-info">
+                  <span class="skill-name">C / C++</span>
+                  <span class="skill-detail">Firmware, Embedded Drivers</span>
+                </div>
+                <div class="skill-bar-bg"><div class="skill-bar-fill" style="width: 86%;"></div></div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-item-info">
+                  <span class="skill-name">Computer Vision (OpenCV)</span>
+                  <span class="skill-detail">Visual Servoing & Tracking</span>
+                </div>
+                <div class="skill-bar-bg"><div class="skill-bar-fill" style="width: 82%;"></div></div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-item-info">
+                  <span class="skill-name">PlatformIO & Embedded Toolchains</span>
+                  <span class="skill-detail">Builds, Debuggers, Flashing</span>
+                </div>
+                <div class="skill-bar-bg"><div class="skill-bar-fill" style="width: 88%;"></div></div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-item-info">
+                  <span class="skill-name">Git, Linux & LaTeX</span>
+                  <span class="skill-detail">Version Control & Technical Docs</span>
+                </div>
+                <div class="skill-bar-bg"><div class="skill-bar-fill" style="width: 92%;"></div></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- FABRICATION & METROLOGY -->
+          <div class="skill-category-card">
+            <div class="skill-header">
+              <div class="skill-icon-box">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"></path></svg>
+              </div>
+              <div>
+                <h3 class="skill-cat-title">Fabrication & Metrology</h3>
+                <span class="skill-cat-subtitle">Precision Manufacturing</span>
+              </div>
+            </div>
+            <div class="skill-list">
+              <div class="skill-item">
+                <div class="skill-item-info">
+                  <span class="skill-name">CNC Machining & Routing</span>
+                  <span class="skill-detail">G-code, 3/4-Axis Toolpaths</span>
+                </div>
+                <div class="skill-bar-bg"><div class="skill-bar-fill" style="width: 92%;"></div></div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-item-info">
+                  <span class="skill-name">Manual Lathe & Knee Mill</span>
+                  <span class="skill-detail">Single-Point Turning & Facing</span>
+                </div>
+                <div class="skill-bar-bg"><div class="skill-bar-fill" style="width: 90%;"></div></div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-item-info">
+                  <span class="skill-name">Precision Metrology</span>
+                  <span class="skill-detail">Micrometers, Calipers, Dial Indicators</span>
+                </div>
+                <div class="skill-bar-bg"><div class="skill-bar-fill" style="width: 95%;"></div></div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-item-info">
+                  <span class="skill-name">Composites & Vacuum Bagging</span>
+                  <span class="skill-detail">Carbon Fiber, Glass, Core Layups</span>
+                </div>
+                <div class="skill-bar-bg"><div class="skill-bar-fill" style="width: 86%;"></div></div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-item-info">
+                  <span class="skill-name">3D Printing (FDM & SLA)</span>
+                  <span class="skill-detail">Rapid Prototyping & Inspection Fixtures</span>
+                </div>
+                <div class="skill-bar-bg"><div class="skill-bar-fill" style="width: 94%;"></div></div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         EDUCATION & HONORS
+         ====================================================================== -->
+    <section class="section" id="education" style="background-color: var(--bg-surface);">
+      <div class="container">
+        
+        <div class="section-header">
+          <span class="section-tag">// Academic Background</span>
+          <h2 class="section-title">Education & Honors</h2>
+          <p class="section-description">
+            Strong foundation in mechanical engineering principles combined with computer science software and systems fundamentals.
+          </p>
+        </div>
+
+        <div class="edu-grid">
+          
+          <div class="edu-card">
+            <h3 class="edu-school">University of California, Irvine</h3>
+            <div class="edu-degree">Bachelor of Science in Mechanical Engineering</div>
+            <div class="edu-meta">
+              <span>Minor in Information & Computer Science</span>
+              <span>•</span>
+              <span>Cumulative GPA: 3.7 / 4.0</span>
+              <span>•</span>
+              <span>Expected Graduation: June 2028</span>
+            </div>
+            <p style="color: var(--text-muted); font-size: 0.95rem; line-height: 1.6;">
+              Relevant Coursework & Studies: Dynamics, Fluid Mechanics, Thermodynamics, Mechatronics & Microcontrollers (MAE 106), Aerodynamics, Mechanical Systems Design, Data Structures & Algorithms, Signals & Systems, Computer Organization.
+            </p>
+          </div>
+
+          <div class="edu-card">
+            <h3 style="font-size: 1.2rem; font-weight: 700; margin-bottom: 1.25rem;">Honors & Certifications</h3>
+            <div class="award-list">
+              <div class="award-item">
+                <div class="award-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="8" r="7"></circle><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"></polyline></svg>
+                </div>
+                <div>
+                  <div class="award-title">SolidWorks CSWP Certified</div>
+                  <div class="award-sub">Certified Mechanical Design Professional</div>
+                </div>
+              </div>
+              <div class="award-item">
+                <div class="award-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path></svg>
+                </div>
+                <div>
+                  <div class="award-title">Eagle Scout Award</div>
+                  <div class="award-sub">Scouts BSA · November 2023</div>
+                </div>
+              </div>
+              <div class="award-item">
+                <div class="award-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6"></path><path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18"></path><path d="M4 22h16"></path><path d="M10 14.66V17c0 .55-.47.98-.97 1.21C7.85 18.75 7 20.24 7 22"></path><path d="M14 14.66V17c0 .55.47.98.97 1.21C16.15 18.75 17 20.24 17 22"></path><path d="M18 2H6v7a6 6 0 0 0 12 0V2Z"></path></svg>
+                </div>
+                <div>
+                  <div class="award-title">Engineering Student of the Year</div>
+                  <div class="award-sub">ROP Engineering · May 2024</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         CONTACT SECTION
+         ====================================================================== -->
+    <section class="section" id="contact">
+      <div class="container">
+        
+        <div class="contact-card">
+          <div class="contact-content">
+            
+            <div>
+              <span class="section-tag">// Get In Touch</span>
+              <h2 class="contact-heading">Let's Build Something Exceptional Together.</h2>
+              <p class="contact-desc">
+                I am actively seeking engineering internships, co-ops, and research collaborations where I can contribute hardware, embedded systems, and vehicle dynamics expertise. Feel free to reach out directly!
+              </p>
+              
+              <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
+                <a href="mailto:pratik.palwai.1@gmail.com" class="btn btn-primary">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                  <span>Send Direct Email</span>
+                </a>
+                <a href="assets/resume.pdf" target="_blank" class="btn btn-secondary" download="Pratik_Palwai_Resume.pdf">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+                  <span>Download Resume (PDF)</span>
+                </a>
+              </div>
+            </div>
+
+            <div class="contact-methods">
+              
+              <!-- EMAIL -->
+              <div class="contact-method-item">
+                <div class="method-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                </div>
+                <div class="method-text">
+                  <span class="method-label">Direct Email</span>
+                  <a href="mailto:pratik.palwai.1@gmail.com" class="method-val">pratik.palwai.1@gmail.com</a>
+                </div>
+                <button class="btn-copy" data-copy-text="pratik.palwai.1@gmail.com" title="Copy email address">Copy</button>
+              </div>
+
+              <!-- LINKEDIN -->
+              <div class="contact-method-item">
+                <div class="method-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+                </div>
+                <div class="method-text">
+                  <span class="method-label">Professional Profile</span>
+                  <a href="https://www.linkedin.com/in/pratik-palwai/" target="_blank" rel="noopener noreferrer" class="method-val">linkedin.com/in/pratik-palwai</a>
+                </div>
+              </div>
+
+              <!-- GITHUB -->
+              <div class="contact-method-item">
+                <div class="method-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                </div>
+                <div class="method-text">
+                  <span class="method-label">Code Repositories</span>
+                  <a href="https://github.com/Pratik-Palwai" target="_blank" rel="noopener noreferrer" class="method-val">github.com/Pratik-Palwai</a>
+                </div>
+              </div>
+
+              <!-- GRABCAD -->
+              <div class="contact-method-item">
+                <div class="method-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path><polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline><line x1="12" y1="22.08" x2="12" y2="12"></line></svg>
+                </div>
+                <div class="method-text">
+                  <span class="method-label">CAD & 3D Models</span>
+                  <a href="https://grabcad.com/pratik.palwai-1/models" target="_blank" rel="noopener noreferrer" class="method-val">grabcad.com/pratik.palwai-1/models</a>
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- ======================================================================
+       FOOTER
+       ====================================================================== -->
+  <footer class="footer">
+    <div class="container footer-content">
+      <div>
+        <div style="font-weight: 700; color: var(--text-main); margin-bottom: 0.25rem;">Pratik Palwai</div>
+        <div>Mechanical Engineering & Computer Science · University of California, Irvine</div>
+      </div>
+      <div class="footer-links">
+        <a href="#about" class="footer-link">About</a>
+        <a href="#projects" class="footer-link">Projects</a>
+        <a href="#experience" class="footer-link">Experience</a>
+        <a href="#skills" class="footer-link">Skills</a>
+        <a href="assets/resume.pdf" target="_blank" class="footer-link">Resume</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ======================================================================
+       PROJECT DETAIL MODAL DIALOG
+       ====================================================================== -->
+  <div class="modal-backdrop" id="project-modal" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+    <div class="modal-container">
+      <div class="modal-header">
+        <div class="modal-title-group">
+          <span class="modal-affiliation" id="modal-affiliation">Organization</span>
+          <h3 class="modal-title" id="modal-title">Project Title</h3>
+        </div>
+        <button class="modal-close-btn" id="modal-close-btn" aria-label="Close project modal">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+        </button>
+      </div>
+      <div class="modal-body" id="modal-body-content">
+        <!-- Dynamically injected via script.js -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Back to Top Button -->
+  <button id="back-to-top" class="back-to-top" aria-label="Scroll to top" title="Back to top">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="18 15 12 9 6 15"></polyline></svg>
+  </button>
+
+  <script src="script.js"></script>
+</body>
+</html>
