@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projects | Pratik Palwai</title>
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <header>
+    <div class="container nav-bar">
+      <div class="site-title">
+        <a href="index.html">Pratik Palwai</a>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="index.html">About</a></li>
+          <li><a href="projects.html" class="active">Projects</a></li>
+          <li><a href="experience.html">Experience</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="assets/resume.pdf" target="_blank">Resume</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <div class="page-header">
+      <h1>Projects</h1>
+      <div class="page-subtitle">Hardware, controls, UAVs, and fabrication projects</div>
+    </div>
+
+    <!-- PROJECT 1: HYUNDAI -->
+    <div class="project-item">
+      <div class="project-title">Hyundai Santa Fe XRT &mdash; Sand Traction Control &amp; Telemetry</div>
+      <div class="project-team">Hyundai Motor Group &bull; Off-Road Engineering Intern</div>
+      <img src="assets/images/fsae_ev_sim.png" alt="Vehicle Simulation and Telemetry" class="project-image">
+      <p class="project-text">
+        In soft sand and silt, conventional traction control systems aggressively cut engine power or clamp brake lines too hard, causing the vehicle to dig in and lose momentum. I worked on tuning software routines for the 2028 Hyundai Santa Fe XRT terrain modes, modulating brake line pressure and engine/hybrid powertrain torque to maintain stability and controlled wheel spin.
+      </p>
+      <p class="project-text">
+        I also instrumented a 2025 Ford Bronco Badlands benchmarking vehicle with 40+ strain gauges across driveshafts and axle halfshafts, developed a calibration procedure to measure dynamic torque, and wrote a Python library for automated CANbus data acquisition, digital signal filtering, and rapid test report generation.
+      </p>
+      <div class="project-tags">
+        <span class="tag">CANbus</span>
+        <span class="tag">Python</span>
+        <span class="tag">Vehicle Dynamics</span>
+        <span class="tag">Strain Gauges</span>
+        <span class="tag">Signal Processing</span>
+      </div>
+    </div>
+
+    <!-- PROJECT 2: UAV FORGE -->
+    <div class="project-item">
+      <div class="project-title">Autonomous Hybrid VTOL UAV (4+1 Quad-Plane)</div>
+      <div class="project-team">UCI UAV Forge SUAS &bull; Aircraft Lead</div>
+      <img src="assets/images/uav_flight_range.png" alt="UAV Sizing Trade Study: Range vs Wing Area and Battery" class="project-image">
+      <p class="project-text">
+        Led all aircraft design and sizing for UCI's first hybrid VTOL UAV (4 vertical lift rotors for VTOL takeoff/landing + 1 pusher propeller for long-range forward flight). The goal was to drastically extend mission radius for the collegiate SUAS search-and-rescue competition.
+      </p>
+      <p class="project-text">
+        I wrote first-principles aerodynamic sizing scripts in Python and used Flow5 and MIT xFoil to model airfoil lift/drag polars and Oswald efficiency factors. By optimizing wing area, battery mass fraction, and cruise speed, we increased operational flight range from 11 km to 50 km (+354%) while satisfying payload and stall requirements.
+      </p>
+      <div class="project-tags">
+        <span class="tag">Python Sizing</span>
+        <span class="tag">Flow5 / xFoil</span>
+        <span class="tag">SolidWorks CAD</span>
+        <span class="tag">Aerodynamics</span>
+        <span class="tag">VTOL Drones</span>
+      </div>
+    </div>
+
+    <!-- PROJECT 3: FSAE EV POWERTRAIN -->
+    <div class="project-item">
+      <div class="project-title">Formula SAE Electric &mdash; Powertrain Gearbox &amp; Thermal Control</div>
+      <div class="project-team">UCI Formula SAE EV Racing &bull; Powertrain Lead</div>
+      <img src="assets/images/fsae_ev_powertrain.png" alt="Electric Vehicle Powertrain Simulation" class="project-image">
+      <p class="project-text">
+        Responsible for the powertrain gearbox architecture, mechanical drawings, and cooling systems for UCI's Formula SAE electric vehicle. I simulated longitudinal acceleration in Python using Pacejka tire slip models and motor torque curves to select the reduction gear ratio, achieving a simulated 0&ndash;60 mph launch in under 2.50 seconds.
+      </p>
+      <p class="project-text">
+        I drafted 2D manufacturing prints adhering strictly to ASME Y14.5 GD&amp;T standards, machined gearbox hardware on CNC mills, and designed a custom go/no-go inspection fixture to check bearing bore tolerances. Additionally, I implemented closed-loop PID control for coolant pumps and radiator fans to regulate inverter and motor temperatures during endurance tests.
+      </p>
+      <div class="project-tags">
+        <span class="tag">SolidWorks CSWP</span>
+        <span class="tag">ASME Y14.5 GD&T</span>
+        <span class="tag">Python Simulation</span>
+        <span class="tag">PID Control</span>
+        <span class="tag">CNC Machining</span>
+      </div>
+    </div>
+
+    <!-- PROJECT 4: 4-AXIS CNC ROUTER -->
+    <div class="project-item">
+      <div class="project-title">Custom 36" 4-Axis CNC Hot-Wire Foam Router</div>
+      <div class="project-team">UCI AIAA Design/Build/Fly &bull; Chief Engineer</div>
+      <img src="assets/images/uav_drag_polar.png" alt="Aerodynamic Polar Analysis for Wing Core Cutter" class="project-image">
+      <p class="project-text">
+        To reduce aircraft structural weight for the AIAA Design/Build/Fly competition, our team needed to cut precision tapered, swept foam wing cores. Hand cutting produced irregular profiles and excessive epoxy weight during composite layups.
+      </p>
+      <p class="project-text">
+        I designed and built a 36-inch 4-axis hot-wire CNC machine from scratch. It utilizes independent X/Y/U/V axes controlled by a Raspberry Pi RP2040 microcontroller running a custom-forked grblHAL firmware. I also wrote Python scripts to convert airfoil coordinate files (.dat) into synchronized G-code toolpaths. The resulting cores reduced composite wing structural mass by 40% while exceeding 6G load requirements.
+      </p>
+      <div class="project-tags">
+        <span class="tag">RP2040</span>
+        <span class="tag">grblHAL Firmware</span>
+        <span class="tag">C / C++</span>
+        <span class="tag">Composites Layup</span>
+        <span class="tag">Vacuum Bagging</span>
+      </div>
+    </div>
+
+    <!-- PROJECT 5: DYNAMIC THRUST STAND -->
+    <div class="project-item">
+      <div class="project-title">Dynamic Propulsion Thrust Stand &amp; Kalman Filter Telemetry</div>
+      <div class="project-team">Embedded Systems &bull; Mechatronics Lab</div>
+      <img src="assets/images/kalman_filter_thrust.png" alt="Kalman Filter Noise Rejection Plot" class="project-image">
+      <p class="project-text">
+        Measuring dynamic thrust on small brushless drone motors is often corrupted by high-frequency motor vibration harmonics that bleed into strain gauge load cell readings.
+      </p>
+      <p class="project-text">
+        I built an instrumented cantilever test stand running on an ESP32-C3 microcontroller (programmed via PlatformIO in C++). The firmware implements a real-time discrete 1D Kalman filter to reject mechanical vibration noise while logging current, voltage, and thrust at 100 Hz to generate clean motor/propeller efficiency curves (g/W).
+      </p>
+      <div class="project-tags">
+        <span class="tag">ESP32-C3</span>
+        <span class="tag">PlatformIO C++</span>
+        <span class="tag">Kalman Filter</span>
+        <span class="tag">Load Cells</span>
+        <span class="tag">DAQ</span>
+      </div>
+    </div>
+
+    <!-- PROJECT 6: AUTONOMOUS DRONE VISION -->
+    <div class="project-item">
+      <div class="project-title">Autonomous Drone AI Vision Tracking</div>
+      <div class="project-team">UCI EECS Department &bull; Teaching Assistant</div>
+      <p class="project-text">
+        Guided undergraduate engineering cohorts in assembling autonomous quadcopters, configuring flight firmware (Betaflight/PX4), and integrating Raspberry Pi companion computers running OpenCV for real-time visual target acquisition.
+      </p>
+      <p class="project-text">
+        Mentored students in diagnosing hardware, firmware, and embedded peripheral buses (UART, I2C, SPI) and DShot motor protocols using digital storage oscilloscopes and logic analyzers.
+      </p>
+      <div class="project-tags">
+        <span class="tag">Raspberry Pi</span>
+        <span class="tag">OpenCV Python</span>
+        <span class="tag">UART / I2C</span>
+        <span class="tag">Oscilloscopes</span>
+        <span class="tag">Drones</span>
+      </div>
+    </div>
+
+    <!-- PROJECT 7: MACHINE SHOP -->
+    <div class="project-item">
+      <div class="project-title">Robotics Fabrication &amp; Precision Metrology</div>
+      <div class="project-team">UCI Samueli School of Engineering &bull; Machine Shop Staff</div>
+      <img src="assets/images/powertrain_cooling_circuit.png" alt="Fluid and Mechanical Assembly Diagram" class="project-image">
+      <p class="project-text">
+        As shop staff, I mentor over 200 undergraduate engineers annually on mechanical hardware design, SolidWorks CAD modeling, and manufacturing of pneumatically propelled robots.
+      </p>
+      <p class="project-text">
+        I instruct students on 3-axis CNC mill setup, manual lathe turning, and precision metrology tools (calipers, outside micrometers, dial test indicators). I also perform routine maintenance and failure diagnosis on shop machinery to ensure safe, continuous operation.
+      </p>
+      <div class="project-tags">
+        <span class="tag">CNC Milling</span>
+        <span class="tag">Manual Lathe</span>
+        <span class="tag">SolidWorks</span>
+        <span class="tag">Precision Metrology</span>
+        <span class="tag">Pneumatics</span>
+      </div>
+    </div>
+
+  </main>
+
+  <footer>
+    <div class="container">
+      &copy; 2026 Pratik Palwai &bull; Irvine, CA
+    </div>
+  </footer>
+
+</body>
+</html>
