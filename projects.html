@@ -62,11 +62,15 @@
           For the mechanical design, I used NEMA 17 stepper motors with Trinamic 2209 drivers, connected over UART for smooth motion using stealthChop, precise microstepping, and dynamic current adjustment to minimize heat buildup without losing steps. The axes are equipped with precision timing belts and leadscrews, which are fast when needed for rapid G0 moves but precise within 0.1mm of the desired position when paired with the stepper motor/driver combination.
         </p>
       </div>
-      <img src="assets/plane_assem_isometric.png" alt="Custom 36&quot; 4-Axis CNC Hot-Wire Foam Router" class="project-image">
+      <div class="project-image-container">
+        <img src="assets/cnc_wiring.png" alt="CNC Wiring Diagram" class="project-image">
+        <img src="assets/wing_planform.png" alt="Wing Planform Design" class="project-image">
+      </div>
     </div>
 
     <!-- PROJECT 5: DYNAMIC THRUST STAND -->
     <div class="project-item">
+      <img src="assets/thrust_stand_top.png" alt="Dynamic Thrust Stand" class="project-image">
       <div class="project-text">
         <div class="project-title">Electric Propulsion Thrust Stand 
         </div>
@@ -77,7 +81,6 @@
           I built an instrumented cantilever test stand running on an Arduino UNO microcontroller (programmed via PlatformIO in C++). The firmware implements a real-time discrete 1D Kalman filter to reject mechanical vibration noise while logging current, voltage, and thrust at 100 Hz to generate clean motor/propeller efficiency curves (g/W).
         </p>
       </div>
-      <img src="assets/thrust_stand_top.png" alt="Dynamic Thrust Stand" class="project-image">
     </div>
 
   </main>
