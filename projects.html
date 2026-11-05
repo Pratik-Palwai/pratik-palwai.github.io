@@ -1,58 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projects</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projects | Pratik Palwai</title>
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="projects.html">Projects</a></li>
-                <li><a href="experience.html">Experience</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
 
-    <main>
-        <h1>My Projects</h1>
-        <section class="projects-grid">
-            <div class="project-item">
-                <h2 class="project-title">Personal Website</h2>
-                <p class="project-text">Built this portfolio website from scratch using HTML, CSS, and JavaScript to showcase my projects and experience with a clean, modern design.</p>
-                <div class="project-tags">
-                    <span class="tag">HTML</span>
-                    <span class="tag">CSS</span>
-                    <span class="tag">JavaScript</span>
-                </div>
-            </div>
-            <div class="project-item">
-                <h2 class="project-title">Machine Learning Model</h2>
-                <p class="project-text">Developed a machine learning model to predict equipment failures in manufacturing plants using Python and scikit-learn, achieving 92% accuracy.</p>
-                <div class="project-tags">
-                    <span class="tag">Python</span>
-                    <span class="tag">Machine Learning</span>
-                    <span class="tag">scikit-learn</span>
-                </div>
-            </div>
-            <div class="project-item">
-                <h2 class="project-title">Mobile Application</h2>
-                <p class="project-text">Created a cross-platform mobile application using React Native that helps students track their study schedules and manage assignments effectively.</p>
-                <div class="project-tags">
-                    <span class="tag">React Native</span>
-                    <span class="tag">JavaScript</span>
-                    <span class="tag">Firebase</span>
-                </div>
-            </div>
-        </section>
-    </main>
+  <header>
+    <div class="container nav-bar">
+      <div class="site-title">
+        <a href="index.html">Pratik Palwai</a>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="index.html">About</a></li>
+          <li><a href="projects.html" class="active">Projects</a></li>
+          <li><a href="experience.html">Experience</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="assets/resume.pdf" target="_blank">Resume</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
 
-    <footer>
-        <p>&copy; 2026 My Portfolio</p>
-    </footer>
+  <main class="container">
+    <div class="page-header">
+      <h1>Projects</h1>
+    </div>
+
+    <!-- PROJECT 2: UAV FORGE -->
+    <div class="project-item">
+      <div class="project-title">Autonomous VTOL UAV (4+1 quad plane)</div>
+      <img src="assets/plane_assem_isometric.png" alt="Autonomous Hybrid VTOL UAV" class="project-image">
+      <div class="project-text">
+        <p>
+          I led all aircraft design and sizing for UCI's first hybrid VTOL UAV (4 vertical lift rotors for VTOL takeoff/landing + 1 pusher propeller for long-range forward flight). The goal was to drastically extend mission radius for the collegiate SUAS search-and-rescue competition.
+        </p>
+        <p>
+          I wrote first-principles aerodynamic sizing scripts in Python and used Flow5 and MIT xFoil to model airfoil lift/drag polars and Oswald efficiency factors. By optimizing wing area, battery mass fraction, and cruise speed, I increased operational flight range from 11 km to 50 km (+354%) while satisfying payload and stall requirements.
+        </p>
+        <p>
+          I led the team in the structural design of the balsa and carbon-fiber airframe, performed FEA to verify that all components could handle flight loads, and manufactured the plane itself using jigs and fixtures to ensure everything was within tolerance.
+        </p>
+      </div>
+    </div>
+
+    <!-- PROJECT 4: 4-AXIS CNC ROUTER -->
+    <div class="project-item">
+      <div class="project-title">Custom 36&quot; 4-Axis CNC Hot-Wire Foam Router</div>
+      <img src="assets/plane_assem_isometric.png" alt="Custom 36&quot; 4-Axis CNC Hot-Wire Foam Router" class="project-image">
+      <div class="project-text">
+        <p>
+          To reduce aircraft structural weight for the AIAA Design/Build/Fly competition, our team needed to cut precision tapered, swept foam wing cores. Hand cutting produced irregular profiles and excessive epoxy weight during composite layups.
+        </p>
+        <p>
+          I designed and built a 36-inch 4-axis hot-wire CNC machine from scratch. It utilizes independent X/Y/U/V axes controlled by a Raspberry Pi RP2040 microcontroller running a custom-forked grblHAL firmware. I also wrote Python scripts to convert airfoil coordinate files (.dat) into synchronized G-code toolpaths. The resulting cores reduced composite wing structural mass by 40% while exceeding 2G load requirements.
+        </p>
+        <p>
+          For the mechanical design, I used NEMA 17 stepper motors with Trinamic 2209 drivers, connected over UART for smooth motion using stealthChop, precise microstepping, and dynamic current adjustment to minimize heat buildup without losing steps. The axes are equipped with precision timing belts and leadscrews, which are fast when needed for rapid G0 moves but precise within 0.1mm of the desired position when paired with the stepper motor/driver combination.
+        </p>
+      </div>
+    </div>
+
+    <!-- PROJECT 5: DYNAMIC THRUST STAND -->
+    <div class="project-item">
+      <div class="project-title">Dynamic Propulsion Thrust Stand &amp; Kalman Filter Telemetry</div>
+      <div class="project-text">
+        <p>
+          Measuring dynamic thrust on small brushless drone motors is often corrupted by high-frequency motor vibration harmonics that bleed into strain gauge load cell readings.
+        </p>
+        <p>
+          I built an instrumented cantilever test stand running on an ESP32-C3 microcontroller (programmed via PlatformIO in C++). The firmware implements a real-time discrete 1D Kalman filter to reject mechanical vibration noise while logging current, voltage, and thrust at 100 Hz to generate clean motor/propeller efficiency curves (g/W).
+        </p>
+      </div>
+    </div>
+
+  </main>
+
+  <footer>
+    <div class="container">
+      &copy; 2026 Pratik Palwai &bull; Irvine, CA
+    </div>
+  </footer>
+
 </body>
 </html>
