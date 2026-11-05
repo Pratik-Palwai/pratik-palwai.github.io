@@ -61,6 +61,19 @@ a:hover {
   padding: 0 1.5rem;
 }
 
+/* Main Content Centering */
+main {
+  padding: 2.5rem 0 4rem;
+  text-align: center;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  justify-content: center;
+}
+
 /* Header & Navigation */
 header {
   border-bottom: 1px solid var(--border);
