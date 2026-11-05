@@ -67,13 +67,15 @@
 
     <!-- PROJECT 5: DYNAMIC THRUST STAND -->
     <div class="project-item">
-      <div class="project-title">Dynamic Propulsion Thrust Stand &amp; Kalman Filter Telemetry</div>
+      <div class="project-title">Electric Propulsion Thrust Stand 
+      </div>
+      <img src="assets/thrust_stand_top.png" alt="Dynamic Thrust Stand" class="project-image">
       <div class="project-text">
         <p>
           Measuring dynamic thrust on small brushless drone motors is often corrupted by high-frequency motor vibration harmonics that bleed into strain gauge load cell readings.
         </p>
         <p>
-          I built an instrumented cantilever test stand running on an ESP32-C3 microcontroller (programmed via PlatformIO in C++). The firmware implements a real-time discrete 1D Kalman filter to reject mechanical vibration noise while logging current, voltage, and thrust at 100 Hz to generate clean motor/propeller efficiency curves (g/W).
+          I built an instrumented cantilever test stand running on an Arduino UNO microcontroller (programmed via PlatformIO in C++). The firmware implements a real-time discrete 1D Kalman filter to reject mechanical vibration noise while logging current, voltage, and thrust at 100 Hz to generate clean motor/propeller efficiency curves (g/W).
         </p>
       </div>
     </div>
