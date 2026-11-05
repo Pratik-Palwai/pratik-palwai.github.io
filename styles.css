@@ -232,6 +232,25 @@ p {
   border-color: var(--border-focus);
 }
 
+/* Responsive layout: image on right for larger screens */
+@media (min-width: 768px) {
+  .project-item {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+  
+  .project-text {
+    flex: 1;
+    min-width: 0;
+  }
+  
+  .project-image {
+    max-width: 40%;
+    flex-shrink: 0;
+    margin: 0 0 0 2rem;
+  }
+}
+
 .project-title {
   font-size: 1.25rem;
   font-weight: 700;
@@ -253,8 +272,13 @@ p {
   background-color: #08070d;
   border-radius: var(--radius);
   border: 1px solid var(--border);
-  margin: 1rem 0;
-  display: block;
+}
+
+/* Responsive layout for project images */
+@media (min-width: 768px) {
+  .project-image {
+    max-width: 40%;
+  }
 }
 
 .project-text {

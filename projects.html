@@ -33,9 +33,8 @@
 
     <!-- PROJECT 2: UAV FORGE -->
     <div class="project-item">
-      <div class="project-title">Autonomous VTOL UAV (4+1 quad plane)</div>
-      <img src="assets/plane_assem_isometric.png" alt="Autonomous Hybrid VTOL UAV" class="project-image">
       <div class="project-text">
+        <div class="project-title">Autonomous VTOL UAV (4+1 quad plane)</div>
         <p>
           I led all aircraft design and sizing for UCI's first hybrid VTOL UAV (4 vertical lift rotors for VTOL takeoff/landing + 1 pusher propeller for long-range forward flight). The goal was to drastically extend mission radius for the collegiate SUAS search-and-rescue competition.
         </p>
@@ -46,13 +45,13 @@
           I led the team in the structural design of the balsa and carbon-fiber airframe, performed FEA to verify that all components could handle flight loads, and manufactured the plane itself using jigs and fixtures to ensure everything was within tolerance.
         </p>
       </div>
+      <img src="assets/plane_assem_isometric.png" alt="Autonomous Hybrid VTOL UAV" class="project-image">
     </div>
 
     <!-- PROJECT 4: 4-AXIS CNC ROUTER -->
     <div class="project-item">
-      <div class="project-title">Custom 36&quot; 4-Axis CNC Hot-Wire Foam Router</div>
-      <img src="assets/plane_assem_isometric.png" alt="Custom 36&quot; 4-Axis CNC Hot-Wire Foam Router" class="project-image">
       <div class="project-text">
+        <div class="project-title">Custom 36&quot; 4-Axis CNC Hot-Wire Foam Router</div>
         <p>
           To reduce aircraft structural weight for the AIAA Design/Build/Fly competition, our team needed to cut precision tapered, swept foam wing cores. Hand cutting produced irregular profiles and excessive epoxy weight during composite layups.
         </p>
@@ -63,14 +62,14 @@
           For the mechanical design, I used NEMA 17 stepper motors with Trinamic 2209 drivers, connected over UART for smooth motion using stealthChop, precise microstepping, and dynamic current adjustment to minimize heat buildup without losing steps. The axes are equipped with precision timing belts and leadscrews, which are fast when needed for rapid G0 moves but precise within 0.1mm of the desired position when paired with the stepper motor/driver combination.
         </p>
       </div>
+      <img src="assets/plane_assem_isometric.png" alt="Custom 36&quot; 4-Axis CNC Hot-Wire Foam Router" class="project-image">
     </div>
 
     <!-- PROJECT 5: DYNAMIC THRUST STAND -->
     <div class="project-item">
-      <div class="project-title">Electric Propulsion Thrust Stand 
-      </div>
-      <img src="assets/thrust_stand_top.png" alt="Dynamic Thrust Stand" class="project-image">
       <div class="project-text">
+        <div class="project-title">Electric Propulsion Thrust Stand 
+        </div>
         <p>
           Measuring dynamic thrust on small brushless drone motors is often corrupted by high-frequency motor vibration harmonics that bleed into strain gauge load cell readings.
         </p>
@@ -78,6 +77,7 @@
           I built an instrumented cantilever test stand running on an Arduino UNO microcontroller (programmed via PlatformIO in C++). The firmware implements a real-time discrete 1D Kalman filter to reject mechanical vibration noise while logging current, voltage, and thrust at 100 Hz to generate clean motor/propeller efficiency curves (g/W).
         </p>
       </div>
+      <img src="assets/thrust_stand_top.png" alt="Dynamic Thrust Stand" class="project-image">
     </div>
 
   </main>
