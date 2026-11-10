@@ -61,6 +61,13 @@ a:hover {
   padding: 0 1.5rem;
 }
 
+/* Ensure full width on mobile */
+@media (max-width: 767px) {
+  .container {
+    padding: 0 1rem;
+  }
+}
+
 /* Main Content Centering */
 main {
   padding: 2.5rem 0 4rem;
@@ -251,6 +258,18 @@ p {
   }
 }
 
+/* Improve responsiveness for all screen sizes */
+@media (max-width: 767px) {
+  .project-item {
+    padding: 1rem;
+  }
+  
+  .project-image {
+    max-width: 100%;
+    margin: 1rem 0 0 0;
+  }
+}
+
 /* Specific styling for CNC project with dual images stacked vertically */
 .cnc-project .project-image-container {
   display: flex;
@@ -270,6 +289,10 @@ p {
     flex: 0 0 40%;
     max-width: 40%;
     margin-left: 2rem;
+  }
+  
+  .cnc-project .project-image {
+    max-width: 100%;
   }
 }
 
@@ -300,6 +323,13 @@ p {
 @media (min-width: 768px) {
   .project-image {
     max-width: 40%;
+  }
+}
+
+@media (max-width: 767px) {
+  .project-image {
+    max-width: 100%;
+    margin: 1rem 0 0 0;
   }
 }
 
@@ -384,15 +414,16 @@ ul.exp-bullets li {
   margin-bottom: 1.5rem;
 }
 
-.skills-group strong {
-  display: block;
-  color: var(--text-main);
-  margin-bottom: 0.35rem;
-}
-
 .skills-group span {
   color: var(--text-muted);
   font-size: 0.95rem;
+  display: block;
+}
+
+.skills-group strong {
+  color: var(--text-main);
+  margin-bottom: 0.35rem;
+  display: inline;
 }
 
 /* Contact List */
@@ -452,5 +483,10 @@ footer {
 
   .project-item {
     flex-direction: column;
+  }
+  
+  .project-image {
+    max-width: 100%;
+    margin: 1rem 0 0 0;
   }
 }
