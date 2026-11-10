@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none">
   <rect width="64" height="64" rx="14" fill="#0f0d17"/>
-  <!-- Caliper / Engineering Monogram 'P' with Purple Accent -->
+  <!-- Caliper/Engineering Monogram 'P' with Purple Accent -->
   <path d="M22 16 H36 C42.6 16 48 21.4 48 28 C48 34.6 42.6 40 36 40 H28 V48" stroke="#a855f7" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
   <circle cx="32" cy="32" r="3.5" fill="#c084fc"/>
   <circle cx="22" cy="16" r="3" fill="#a855f7"/>
